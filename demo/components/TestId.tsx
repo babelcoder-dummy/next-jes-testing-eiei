@@ -32,7 +32,7 @@ const TestID = () => {
       <Separator className="my-4"></Separator>
       <div className="grid grid-cols-3 gap-4">
         {range(6).map((n) => (
-          <Card key={n}>
+          <Card key={n} data-testid={`card-${n}`}>
             <div className="relative h-40">
               <Image
                 priority

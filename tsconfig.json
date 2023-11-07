@@ -32,6 +32,8 @@
     ".eslintrc.cjs",
     "next.config.js",
     "next-env.d.ts",
+    "jest.config.mjs",
+    "jest.setup.mjs",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",

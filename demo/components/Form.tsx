@@ -28,16 +28,16 @@ const formSchema = z.object({
     message: 'Username must be at least 2 characters.',
   }),
   email: z.string().email(),
-  gender: z.enum(['male', 'female']),
-  maritalStatus: z.enum([
-    'single',
-    'engaged',
-    'married',
-    'separated',
-    'divorced',
-    'widowed',
-  ]),
-  address: z.string(),
+  gender: z.enum(['male', 'female'], {
+    required_error: 'Gender must be provided',
+  }),
+  maritalStatus: z.enum(
+    ['single', 'engaged', 'married', 'separated', 'divorced', 'widowed'],
+    {
+      required_error: 'Marital status must be provided',
+    },
+  ),
+  address: z.string().min(1, { message: 'Address must be provided' }),
 });
 
 const FormComponent = () => {
