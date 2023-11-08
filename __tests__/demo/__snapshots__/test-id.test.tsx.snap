@@ -21,6 +21,7 @@ exports[`Test ID renders TestId unchanged 1`] = `
     >
       <div
         class="rounded-lg border bg-card text-card-foreground shadow-sm"
+        data-testid="card-0"
       >
         <div
           class="relative h-40"
@@ -84,6 +85,7 @@ exports[`Test ID renders TestId unchanged 1`] = `
       </div>
       <div
         class="rounded-lg border bg-card text-card-foreground shadow-sm"
+        data-testid="card-1"
       >
         <div
           class="relative h-40"
@@ -147,6 +149,7 @@ exports[`Test ID renders TestId unchanged 1`] = `
       </div>
       <div
         class="rounded-lg border bg-card text-card-foreground shadow-sm"
+        data-testid="card-2"
       >
         <div
           class="relative h-40"
@@ -210,6 +213,7 @@ exports[`Test ID renders TestId unchanged 1`] = `
       </div>
       <div
         class="rounded-lg border bg-card text-card-foreground shadow-sm"
+        data-testid="card-3"
       >
         <div
           class="relative h-40"
@@ -273,6 +277,7 @@ exports[`Test ID renders TestId unchanged 1`] = `
       </div>
       <div
         class="rounded-lg border bg-card text-card-foreground shadow-sm"
+        data-testid="card-4"
       >
         <div
           class="relative h-40"
@@ -336,6 +341,7 @@ exports[`Test ID renders TestId unchanged 1`] = `
       </div>
       <div
         class="rounded-lg border bg-card text-card-foreground shadow-sm"
+        data-testid="card-5"
       >
         <div
           class="relative h-40"

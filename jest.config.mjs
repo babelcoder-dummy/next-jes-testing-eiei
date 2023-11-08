@@ -9,9 +9,33 @@ const createJestConfig = nextJest({
 /** @type {import('jest').Config} */
 const config = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.mjs'],
-  testEnvironment: 'jest-environment-jsdom',
+  testEnvironment: './jest.environment.js',
+  testPathIgnorePatterns: [
+    '__tests__/demo/api/',
+    '__tests__/models/',
+    '__tests__/api/',
+    '__tests__/helpers/',
+  ],
+  testEnvironmentOptions: {
+    customExportConditions: [''],
+  },
   moduleNameMapper: {
     '^@/components/(.*)$': '<rootDir>/components/$1',
+  },
+  collectCoverage: true,
+  collectCoverageFrom: [
+    './app/**',
+    './components/**',
+    './hooks/**',
+    './lib/**',
+    './models/**',
+    './store/**',
+    './validators/**',
+  ],
+  coverageThreshold: {
+    global: {
+      lines: 20,
+    },
   },
 };
 

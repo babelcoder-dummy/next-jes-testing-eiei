@@ -34,6 +34,7 @@
     "next-env.d.ts",
     "jest.config.mjs",
     "jest.setup.mjs",
+    "jest.environment.js",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
